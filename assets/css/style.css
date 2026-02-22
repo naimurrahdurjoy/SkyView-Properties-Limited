@@ -388,20 +388,10 @@ a {
 }
 
   .header-bottom {
-  background: var(--orange-soda); /* make header bar orange */
+  background: var(--white); /* restored white header */
   padding-block: 25px;
-  color: var(--white);
+  color: var(--dark-jungle-green);
 }
-
-  /* ensure nav links and action icons are readable on orange */
-  .header-bottom .navbar-link {
-    color: var(--white);
-  }
-
-  .header-bottom .header-bottom-actions-btn ion-icon,
-  .header-bottom .header-bottom-actions-btn span {
-    color: var(--white);
-  }
 
 .header-bottom .logo img {
   margin-inline: auto;
@@ -1824,17 +1814,17 @@ a {
     right: 0;
     top: 0; /* pin header to top to avoid mid-page overlap */
     padding-block: 10px; /* reduce header height when active */
-    background: var(--orange-soda); /* orange active bar */
-    color: var(--white);
+    background: var(--white); /* keep active header white */
+    color: var(--dark-jungle-green);
     box-shadow: 0 6px 24px hsla(219, 12%, 10%, 0.08); /* subtle shadow */
     animation: none; /* disable slide animation that caused jump */
   }
 
-  /* ensure nav links remain visible on orange background */
+  /* ensure nav links remain readable on white background */
   .header.active .header-bottom .navbar-link,
   .header.active .header-bottom .header-top-link,
   .header.active .header-bottom .header-bottom-actions-btn span {
-    color: var(--white) !important;
+    color: var(--dark-jungle-green) !important;
   }
 
   @keyframes slideDown {
