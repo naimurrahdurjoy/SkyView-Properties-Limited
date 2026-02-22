@@ -387,10 +387,21 @@ a {
   --orange-soda: hsl(7, 72%, 46%);
 }
 
-.header-bottom {
-  background: var(--white);
+  .header-bottom {
+  background: var(--orange-soda); /* make header bar orange */
   padding-block: 25px;
+  color: var(--white);
 }
+
+  /* ensure nav links and action icons are readable on orange */
+  .header-bottom .navbar-link {
+    color: var(--white);
+  }
+
+  .header-bottom .header-bottom-actions-btn ion-icon,
+  .header-bottom .header-bottom-actions-btn span {
+    color: var(--white);
+  }
 
 .header-bottom .logo img {
   margin-inline: auto;
